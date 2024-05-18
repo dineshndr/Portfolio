@@ -265,7 +265,7 @@ section {
 /* ABOUT SECTION */
 
 #about {
-  position: relative;
+  position: static;
 }
 
 .about-containers {
@@ -273,7 +273,9 @@ section {
   margin-bottom: 2rem;
   margin-top: 2rem;
   
+  
 }
+
 
 .about-details-container {
   justify-content:center;
@@ -285,6 +287,101 @@ section {
   display:flex;
 }
 
+/* .box {
+  width: 100px; 
+  height: 100px;
+  margin: 5px;
+  border-radius: 10px;
+  position: sticky;
+  overflow: visible;
+} */
+
+.box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto; /* Ensure it adapts to content */
+  height: 100px; /* Adjust as needed */
+  margin: 5px;
+  border-radius: 10px;
+  overflow: visible;
+  position: sticky;
+}
+.logo {
+  max-width: 90%;
+  max-height: 90%;
+
+}
+
+/* .skill-bar {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 13px;
+  width:80px;
+  width: 100%;
+  background-color: yellow; 
+} */
+
+.skill-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: yellow; /* Default color for beginner level */
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.intermediate {
+  background-color: orange;
+}
+
+.experienced {
+  background-color: green;
+}
+
+/* experience */
+
+#technicalskills{
+  position:relative;
+}
+
+.experience-sub-title{
+  color:rgb(85,85,85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+.experience-details-container{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-container{
+  display:flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+  /* box-sizing: border-box; */
+}
+.article .logo{
+  cursor: default;
+}
+
+/* .details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally *
+  margin-bottom:2rem;
+  /* Add margin between frontend and backend sections */
 
 
 .arrow {
@@ -295,12 +392,14 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+   flex:1;
+  
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  text-align:center;
+  margin-bottom: 2rem;
 }
 
 
@@ -322,7 +421,9 @@ section {
   flex-direction: column;
   align-items: center;
 }
-
+.experience-about-containers{
+  flex-direction: column;
+}
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -339,7 +440,7 @@ section {
 
 .article-container {
   display: flex;
-  text-align: left;
+  text-align: start;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2rem;
@@ -351,6 +452,7 @@ article {
   display: flex;
   width: 10rem;
   justify-content: safe;
+  
   gap: 0.55rem;
 }
 

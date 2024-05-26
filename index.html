@@ -96,12 +96,12 @@
     </div>
     <br><br><br>
            
-          <div class="about-details-container" >
+          <div class="about-details-container exp-container" >
               
-                  <div class="details-container">
+                  <div class="details-container" style="display: flex;justify-content: center; flex-direction: column; align-items: center;">
                       <img src="./assets/experience.png" alt="Experience icon" class="icon">
                       <h3>Experience</h3>
-                      <span>2.5 years <br /> Software Engineer <br /> <b> HCL Technologies </b></span>
+                      <span>2.5 years <br /> Software Engineer <br /> <b> HCL Technologies </b><br /> <b> HCL Technologies </b></span>
                   </div>&nbsp;&nbsp;&nbsp;
                   <div class="details-container">
                       <img src="./assets/education.png" alt="Education icon" class="icon">
@@ -113,7 +113,7 @@
          
 
       </div> <br><br><br>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
   </section><br><br><br><br><br>
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
@@ -285,7 +285,7 @@
     <img
       src="./assets/arrow.png"
       alt="Arrow icon"
-      class="icon arrow"
+      class="icon arrow exp-arrow"
       onclick="location.href='./#projects'"
     />
   </section>
@@ -293,9 +293,51 @@
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="projects-div">
+          <div class="project">
+            <div class="project-img-div">
+              <img src="./assets/RefineMind.png" alt="" class="project-image">
+            </div>
+            <div class="project-matter">
+              <h1 class="project-title">Refine Mind</h1>
+              <div style="display: flex; align-items: center; justify-content: center;">
+                <a href="" class="project-link">Github</a>
+              </div>
+              <p>I have developed this Android, IoS and Web application for dementia patients that are suffering with early stages of Memory Loss.
+                Added features like AboutMe, Special Moments, Family and Friends,Games and Favourites that enhance the user cognitive-thinking capability.
+                Utilized Node, React Native, Expo and React native Firebase for delivering the features in robust manner. This App can work with or without internet</p>
+            </div>
+          </div>
+
+          <div class="project">
+             <div class="project-img-div">
+              <img src="./assets/project-2.png" alt="" class="project-image">
+            </div>
+            <div class="project-matter">
+              <h1 class="project-title">Job Application</h1>
+              <div style="display: flex; align-items: center; justify-content: center;">
+                <a href="" class="project-link">Github</a>
+              </div>
+              <p>I have developed this Full Stack web application as a Job Application webiste where the users can be able to create, read, update and delete jobs. Used React JS as a frontend and developed a Spring Rest Web API for the backend services. Connected this website with PostGreSQL database and able to save the jobs in a database.</p>
+            </div>
+          </div>
+
+          <div class="project">
+             <div class="project-img-div">
+              <img src="./assets/project-3.png" alt="" class="project-image">
+            </div>
+            <div class="project-matter">
+              <h1 class="project-title">Ping Pong Game</h1>
+              <div style="display: flex; align-items: center; justify-content: center;">
+                <a href="" class="project-link">Github</a>
+              </div>
+              <p>I designed a competitive game that records and compares scores between two players, determining the winner based on who scores the highest. The game features a scorecard that displays each player's scores in real-time and tracks the winner. To play, users select a maximum score from a dropdown menu, and the players' scores increase randomly. The first player to reach the maximum score is declared the winner, with their victory prominently displayed.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="about-containers">
           <div class="details-container color-container">
-            <div class="article-container">
+            <div class="article-container my-img-height">
               <img
                 src="./assets/RefineMind.png"
                 alt="Project 1"
@@ -310,12 +352,7 @@
               >
               Github
               </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
+
        
             </div>
             <div>
@@ -327,7 +364,7 @@
           </div>
           </div>
           <div class="details-container color-container">
-            <div class="article-container">
+            <div class="article-container my-img-height">
               <img
                 src="./assets/project-2.png"
                 alt="Project 2"
@@ -342,12 +379,7 @@
               >
                 Github
               </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
+
               
             </div>
             <div>
@@ -359,7 +391,7 @@
             </div>
           </div>
           <div class="details-container color-container">
-            <div class="article-container">
+            <div class="article-container my-img-height">
               <img
                 src="./assets/project-3.png"
                 alt="Project 3"
@@ -369,18 +401,14 @@
             </div>
             <h2 class="experience-sub-title project-title">Ping Pong Game</h2>
             <div class="btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                href='https://github.com/'
+                target="_blank"
               >
                 Github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
+            </a>
+
             </div>
             <div>
               <p>
@@ -388,7 +416,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <img
         src="./assets/arrow.png"

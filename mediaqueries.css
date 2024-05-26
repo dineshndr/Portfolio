@@ -47,6 +47,14 @@
   }
 }
 
+@media screen and (max-width: 780px) {
+  .exp-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
